@@ -1,0 +1,1381 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shree Vignesh Interiors | Luxury Interior Design &amp; Renovation</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263342;
+    background: #f7f4ee;
+}
+
+i {
+    margin-right: 5px;
+}
+
+
+/* =========================
+   TOP CONTACT BAR
+========================= */
+
+.topbar {
+    background: #0b1d30;
+    color: white;
+    padding: 10px 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topbar a:hover {
+    color: #d4b36c;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: white;
+    padding: 17px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.brand {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #10263f;
+    letter-spacing: 1px;
+}
+
+.brand span {
+    color: #b18b4a;
+}
+
+nav ul {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #17293d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #b18b4a;
+}
+
+.call-button {
+    background: #10263f;
+    color: white !important;
+    padding: 11px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+    background:
+        linear-gradient(
+            rgba(8,26,42,0.65),
+            rgba(8,26,42,0.65)
+        ),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 850px;
+    color: white;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #d6b875;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #e2c98f;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.gold {
+    background: #b18b4a;
+    color: white;
+}
+
+.white {
+    background: white;
+    color: #10263f;
+}
+
+.whatsapp {
+    background: #1f9d55;
+    color: white;
+}
+
+.instagram {
+    background: #8a3ab9;
+    color: white;
+}
+
+
+/* =========================
+   SECTIONS & TITLES
+========================= */
+
+section {
+    padding: 85px 6%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title small {
+    color: #b18b4a;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.title h2 {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    color: #10263f;
+    margin: 8px;
+}
+
+.title p {
+    max-width: 650px;
+    margin: auto;
+    color: #69737d;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-img {
+    height: 470px;
+    border-radius: 9px;
+    background:
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #10263f;
+    margin-bottom: 18px;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #616c77;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   SERVICES / SECTORS
+========================= */
+
+.services {
+    background: white;
+}
+
+.grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid #e6dfd5;
+    border-radius: 8px;
+    background: white;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card b {
+    color: #b18b4a;
+}
+
+.card h3 {
+    color: #10263f;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #68727d;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   4-STEP PROCESS
+========================= */
+
+.process-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e6dfd5;
+    text-align: center;
+    position: relative;
+}
+
+.process-number {
+    width: 50px;
+    height: 50px;
+    background: #10263f;
+    color: #d4b36c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto 20px auto;
+}
+
+.process-card h3 {
+    color: #10263f;
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    color: #68727d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CALCULATOR SECTION
+========================= */
+
+.calculator-section {
+    background: white;
+}
+
+.calc-box {
+    max-width: 700px;
+    margin: auto;
+    background: #f7f4ee;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #e6dfd5;
+}
+
+.calc-group {
+    margin-bottom: 20px;
+}
+
+.calc-group label {
+    display: block;
+    font-weight: bold;
+    color: #10263f;
+    margin-bottom: 8px;
+}
+
+.calc-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.calc-result {
+    text-align: center;
+    background: #10263f;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.calc-result h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.calc-result p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d4b36c;
+}
+
+
+/* =========================
+   PORTFOLIO WITH ALL SECTORS
+========================= */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 9px 16px;
+    border: 1px solid #b18b4a;
+    background: transparent;
+    color: #10263f;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #b18b4a;
+    color: white;
+}
+
+.portfolio {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    height: 330px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+
+.project h3,
+.project span {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    color: white;
+}
+
+.project h3 {
+    bottom: 42px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.project span {
+    bottom: 20px;
+    font-size: 12px;
+    color: #d4b36c;
+    letter-spacing: 1px;
+}
+
+/* Photo Backgrounds for all Sectors */
+.p-living {
+    background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-kitchen {
+    background-image: url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-master-bedroom {
+    background-image: url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-kids-room {
+    background-image: url("https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-dining {
+    background-image: url("https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-pooja {
+    background-image: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-office {
+    background-image: url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-closet {
+    background-image: url("https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-bathroom {
+    background-image: url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=85");
+}
+
+.p-bar {
+    background-image: url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=85");
+}
+
+
+/* =========================
+   3D VS EXECUTION
+========================= */
+
+.compare-section {
+    background: white;
+}
+
+.compare-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.compare-card {
+    text-align: center;
+}
+
+.compare-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.compare-card h3 {
+    margin-top: 15px;
+    color: #10263f;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why {
+    background: #10263f;
+}
+
+.why .title h2 {
+    color: white;
+}
+
+.why .title p {
+    color: #ccd3da;
+}
+
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #e6dfd5;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    font-weight: bold;
+    color: #10263f;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    padding: 0 20px 20px 20px;
+    color: #68727d;
+    line-height: 1.6;
+    display: none;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #e6dfd5;
+}
+
+.contact-card h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #10263f;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #68727d;
+    line-height: 1.7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    color: white;
+    padding: 13px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-call {
+    background: #b18b4a;
+}
+
+.contact-whatsapp {
+    background: #1f9d55;
+}
+
+.contact-instagram {
+    background: #8a3ab9;
+}
+
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    text-decoration: none;
+}
+
+.floating-whatsapp i {
+    margin: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #091827;
+    color: #ccd3da;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer strong {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-call {
+    background: #b18b4a;
+}
+
+.footer-whatsapp {
+    background: #1f9d55;
+}
+
+.footer-instagram {
+    background: #8a3ab9;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media(max-width:900px) {
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:800px) {
+    .topbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .about,
+    .contact,
+    .compare-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid,
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:550px) {
+    .grid,
+    .portfolio,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP CONTACT BAR
+========================= -->
+
+<div class="topbar">
+    <a href="tel:7020142432">
+        <i class="fa-solid fa-phone"></i> Call: 7020142432
+    </a>
+    <span>|</span>
+    <a href="https://wa.me/919970385487" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp: 9970385487
+    </a>
+    <span>|</span>
+    <a href="https://www.instagram.com/shree_vignesh_interiors" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram: @shree_vignesh_interiors
+    </a>
+</div>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+    <div class="brand">
+        SHREE VIGNESH <span>INTERIORS</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Sectors</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="call-button" href="tel:7020142432">
+        <i class="fa-solid fa-phone"></i> Call Now
+    </a>
+</nav>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<header class="hero" id="home">
+    <div class="hero-content">
+        <div class="badge">SHREE VIGNESH INTERIORS</div>
+        <h1>Beautiful Spaces.<br>Designed for Life.</h1>
+        <p>Elegance • Innovation • Spaces Across All Design Sectors</p>
+
+        <div class="buttons">
+            <a class="btn gold" href="#portfolio">View Sector Portfolio</a>
+            <a class="btn white" href="tel:7020142432"><i class="fa-solid fa-phone"></i> Call Us</a>
+            <a class="btn whatsapp" href="https://wa.me/919970385487" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a class="btn instagram" href="https://www.instagram.com/shree_vignesh_interiors" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+    <div class="about">
+        <div class="about-img"></div>
+        <div>
+            <h2>We create spaces you'll love.</h2>
+            <p><strong>Shree Vignesh Interiors</strong> combines elegant design, practical planning, and attention to detail to transform homes across every sector.</p>
+            <p>From living room TV units and modern master suites to modular kitchens, pooja mandirs, home offices, and custom walk-in wardrobes, we cover all interior needs with premium execution.</p>
+            <a class="btn gold" href="#contact">Start Your Project</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     SECTORS & SERVICES
+========================= -->
+
+<section class="services" id="services">
+    <div class="title">
+        <small>EXPLORE OUR WORK</small>
+        <h2>Interior Sectors We Serve</h2>
+        <p>Complete custom solutions for every space in your home.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <b>01</b>
+            <h3>Living Rooms</h3>
+            <p>Accent walls, drop-ceiling LED cove lighting, TV paneling, and cozy seating arrangements.</p>
+        </div>
+
+        <div class="card">
+            <b>02</b>
+            <h3>Modular Kitchens</h3>
+            <p>L-shaped, parallel, and island layouts with anti-termite tandem drawers and acrylic finishes.</p>
+        </div>
+
+        <div class="card">
+            <b>03</b>
+            <h3>Master &amp; Guest Bedrooms</h3>
+            <p>Upholstered backdrops, side paneling, hidden vanity spaces, and ambient warm lighting.</p>
+        </div>
+
+        <div class="card">
+            <b>04</b>
+            <h3>Kids Bedrooms</h3>
+            <p>Fun, space-saving bunk/storage beds, study desks, and durable custom storage units.</p>
+        </div>
+
+        <div class="card">
+            <b>05</b>
+            <h3>Dining Areas</h3>
+            <p>Elegant dining table layouts, glass display cabinets, and integrated crockeries.</p>
+        </div>
+
+        <div class="card">
+            <b>06</b>
+            <h3>Pooja Rooms &amp; Niches</h3>
+            <p>Traditional and modern mandir units with CNC wood cutting, backlighting, and brass fittings.</p>
+        </div>
+
+        <div class="card">
+            <b>07</b>
+            <h3>Home Office &amp; Study</h3>
+            <p>Ergonomic desk setups, floating wall shelves, cable management, and quiet work spaces.</p>
+        </div>
+
+        <div class="card">
+            <b>08</b>
+            <h3>Walk-in Closets &amp; Wardrobes</h3>
+            <p>Floor-to-ceiling glass profile sliding doors, sensor lights, and organized shoe/accessory racks.</p>
+        </div>
+
+        <div class="card">
+            <b>09</b>
+            <h3>Bathrooms &amp; Home Bars</h3>
+            <p>Luxury marble wall cladding, floating vanity units, counter seating, and wine glass racks.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     4-STEP PROCESS
+========================= -->
+
+<section id="process">
+    <div class="title">
+        <small>HOW IT WORKS</small>
+        <h2>Our 4-Step Process</h2>
+        <p>A simple journey from concept to reality.</p>
+    </div>
+
+    <div class="process-grid">
+        <div class="process-card">
+            <div class="process-number">1</div>
+            <h3>Consultation</h3>
+            <p>We discuss your requirements, preferences, budget, and measure your space on-site.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">2</div>
+            <h3>3D Design</h3>
+            <p>We craft 3D visual layouts so you can preview colors and finishes clearly before work starts.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">3</div>
+            <h3>Material Selection</h3>
+            <p>Choose laminates, acrylics, veneer, hardware, and fabrics with expert guidance.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">4</div>
+            <h3>Execution</h3>
+            <p>On-site execution handled with strict quality checks and timely project handover.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     ESTIMATE CALCULATOR
+========================= -->
+
+<section class="calculator-section" id="calculator">
+    <div class="title">
+        <small>BUDGET PLANNER</small>
+        <h2>Estimate Your Project</h2>
+        <p>Get a quick cost estimate tailored to your project scope.</p>
+    </div>
+
+    <div class="calc-box">
+        <div class="calc-group">
+            <label for="homeType">Select Property Size / Sector Scope</label>
+            <select id="homeType" onchange="calculateCost()">
+                <option value="350000">1 BHK Complete Interior</option>
+                <option value="550000" selected="">2 BHK Complete Interior</option>
+                <option value="800000">3 BHK Complete Interior</option>
+                <option value="180000">Modular Kitchen Only</option>
+                <option value="220000">Living Room + Dining Only</option>
+                <option value="150000">Master Bedroom Suite Only</option>
+            </select>
+        </div>
+
+        <div class="calc-group">
+            <label for="finishType">Select Finish Level</label>
+            <select id="finishType" onchange="calculateCost()">
+                <option value="1">Standard (Laminate Finish &amp; BWR Plywood)</option>
+                <option value="1.25" selected="">Premium (Acrylic / Fluted Panels / Veneer)</option>
+                <option value="1.5">Luxury (High Gloss / Italian Marble / Profile Glass)</option>
+            </select>
+        </div>
+
+        <div class="calc-result">
+            <h3>Estimated Price Range</h3>
+            <p id="totalPrice">₹ 6,50,000 - ₹ 7,25,000</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     ALL SECTORS PORTFOLIO (FILTERABLE)
+========================= -->
+
+<section id="portfolio">
+    <div class="title">
+        <small>OUR SECTORS</small>
+        <h2>Interior Gallery</h2>
+        <p>Filter photos across every sector of home interior design.</p>
+    </div>
+
+    <!-- Filter Buttons for All Sectors -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Sectors</button>
+        <button class="filter-btn" onclick="filterPortfolio('master-bedroom', this)">Living room</button>
+        <button class="filter-btn" onclick="filterPortfolio('kids-room', this)">Kids Bedroom</button>
+        <button class="filter-btn" onclick="filterPortfolio('dining', this)">Dining</button>
+        <button class="filter-btn" onclick="filterPortfolio('pooja', this)">Kitchen room</button>
+        <button class="filter-btn" onclick="filterPortfolio('office', this)">Home Office</button>
+        <button class="filter-btn" onclick="filterPortfolio('closet', this)">Walk-in Closet</button>
+        <button class="filter-btn" onclick="filterPortfolio('bathroom', this)">Bathroom</button>
+        <button class="filter-btn" onclick="filterPortfolio('bar', this)">Home Bar</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio">
+
+        <div class="project p-living living" style="display: block;">
+            <h3>Luxury Home</h3>
+            <span>LUXURY HOME</span>
+        </div>
+
+        <div class="project p-pooja pooja" style="display: block;">
+            <h3>Premium Kitchen Room</h3>
+            <span>KITCHEN ROOM</span>
+        </div>
+
+        <div class="project p-master-bedroom master-bedroom" style="display: block;">
+            <h3>Modern Living room</h3>
+            <span>LIVING ROOM</span>
+        </div>
+
+        <div class="project p-kids-room kids-room" style="display: block;">
+            <h3>Custom Kids Bedroom</h3>
+            <span>KIDS ROOM</span>
+        </div>
+
+        <div class="project p-dining dining" style="display: block;">
+            <h3>Contemporary Dining Setup</h3>
+            <span>DINING ROOM</span>
+        </div>
+
+
+        <div class="project p-office office" style="display: block;">
+            <h3>Ergonomic Study &amp; Office</h3>
+            <span>HOME OFFICE</span>
+        </div>
+
+        <div class="project p-closet closet" style="display: block;">
+            <h3>Wooden Profile Closet</h3>
+            <span>WALK-IN WARDROBE</span>
+        </div>
+
+        <div class="project p-bathroom bathroom" style="display: block;">
+            <h3>Marble Vanity &amp; Bathroom</h3>
+            <span>BATHROOM</span>
+        </div>
+
+        <div class="project p-bar bar" style="display: block;">
+            <h3>Executive Home Bar Counter</h3>
+            <span>HOME BAR</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     3D VS EXECUTION
+========================= -->
+
+<section class="compare-section">
+    <div class="title">
+        <small>PRECISION &amp; QUALITY</small>
+        <h2>3D Design vs Actual Execution</h2>
+        <p>We deliver site handovers matching 3D visual concepts.</p>
+    </div>
+
+    <div class="compare-grid">
+        <div class="compare-card">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="3D Design Render">
+            <h3>3D Render Design</h3>
+        </div>
+
+        <div class="compare-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Completed Site Photo">
+            <h3>Final Executed Site</h3>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why">
+    <div class="title">
+        <small>OUR PROMISE</small>
+        <h2>Why Choose Us?</h2>
+        <p>Creative design with practical thinking and professional execution.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <b>CREATIVE</b>
+            <h3>Fresh Ideas</h3>
+            <p>Modern concepts tailored specifically for your lifestyle and space.</p>
+        </div>
+
+        <div class="card">
+            <b>PRACTICAL</b>
+            <h3>Smart Design</h3>
+            <p>Beautiful, space-optimizing layouts built for daily convenience.</p>
+        </div>
+
+        <div class="card">
+            <b>DETAILS</b>
+            <h3>Premium Finish</h3>
+            <p>High-quality craftsmanship, anti-termite materials, and precise execution.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     FAQ SECTION
+========================= -->
+
+<section id="faq">
+    <div class="title">
+        <small>FREQUENTLY ASKED QUESTIONS</small>
+        <h2>Got Questions?</h2>
+        <p>Here are clear answers to common inquiries.</p>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>What is the average timeline for a full home project?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Most standard 2BHK/3BHK interior projects take between 45 to 60 days from final 3D design approval to site handover.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I hire you for specific sectors (like only a Kitchen or Living Room)?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Yes! We handle both full home interior transformations and individual sector projects such as Modular Kitchens, Living Room TV units, or Master Bedroom suites.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Do you provide 3D designs before work begins?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Yes, we provide detailed 3D visual renders for all key sectors so you can visualize materials, lighting, and colors clearly before execution but it will be chargeable for 3D Designs.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>What materials do you use for modular furniture and wardrobes?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                We use high-grade BWR/BWP plywood, anti-termite acrylic/laminate finishes, and hardware from Premium Brands.
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+    <div class="title">
+        <small>GET IN TOUCH</small>
+        <h2>Let's Create Your Dream Space</h2>
+        <p>Call or message us today to discuss your project requirements.</p>
+    </div>
+
+    <div class="contact">
+        <div class="contact-card">
+            <h2>Shree Vignesh Interiors</h2>
+            <p>Fill in your details for a quick consultation callback.</p>
+
+            <form class="contact-form" action="https://wa.me/919970385487" method="get" target="_blank">
+                <input type="text" placeholder="Your Name" required="">
+                <input type="tel" placeholder="Phone Number" required="">
+                <select>
+                    <option>Select Primary Sector / Service</option>
+                    <option>Full Home Interior</option>
+                    <option>Modular Kitchen</option>
+                    <option>Living Room</option>
+                    <option>Master Bedroom</option>
+                    <option>Kids Bedroom</option>
+                    <option>Pooja Unit</option>
+                    <option>Home Office / Study</option>
+                </select>
+                <textarea rows="3" placeholder="Project details or special requests..."></textarea>
+                <button type="submit" class="btn gold">Request Free Consultation</button>
+            </form>
+
+            <div class="contact-buttons">
+                <a class="contact-call" href="tel:7020142432"><i class="fa-solid fa-phone"></i> Call: 7020142432</a>
+                <a class="contact-whatsapp" href="https://wa.me/919970385487" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 9970385487</a>
+                <a class="contact-instagram" href="https://www.instagram.com/shree_vignesh_interiors" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram: @shree_vignesh_interiors</a>
+            </div>
+        </div>
+
+        <div class="contact-img" style="background: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85') center/cover; border-radius: 8px;"></div>
+    </div>
+</section>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a href="https://wa.me/919970385487" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+    <strong>SHREE VIGNESH INTERIORS</strong>
+    <br>
+    Elegance • Innovation • Spaces
+
+    <div class="footer-links">
+        <a class="footer-call" href="tel:7020142432"><i class="fa-solid fa-phone"></i> Call: 7020142432</a>
+        <a class="footer-whatsapp" href="https://wa.me/919970385487" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 9970385487</a>
+        <a class="footer-instagram" href="https://www.instagram.com/shree_vignesh_interiors" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram: @shree_vignesh_interiors</a>
+    </div>
+
+    <br>
+    © 2026 Shree Vignesh Interiors. All rights reserved.
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT LOGIC
+========================= -->
+
+<script>
+// Budget Calculator Function
+function calculateCost() {
+    const basePrice = parseFloat(document.getElementById('homeType').value);
+    const finishMultiplier = parseFloat(document.getElementById('finishType').value);
+
+    const minEstimate = Math.round(basePrice * finishMultiplier);
+    const maxEstimate = Math.round(minEstimate * 1.15);
+
+    document.getElementById('totalPrice').innerText = 
+        '₹ ' + minEstimate.toLocaleString('en-IN') + ' - ₹ ' + maxEstimate.toLocaleString('en-IN');
+}
+
+// Portfolio Filter Function across All Sectors
+function filterPortfolio(category, btnElement) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    btnElement.classList.add('active');
+
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+        if (category === 'all' || project.classList.contains(category)) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
+}
+
+// Accordion FAQ Toggle Function
+function toggleFAQ(element) {
+    const answer = element.nextElementSibling;
+    const isVisible = answer.style.display === 'block';
+
+    document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+    document.querySelectorAll('.faq-question i').forEach(icon => icon.className = 'fa-solid fa-chevron-down');
+
+    if (!isVisible) {
+        answer.style.display = 'block';
+        element.querySelector('i').className = 'fa-solid fa-chevron-up';
+    }
+}
+</script>
+
+
+</body></html>
